@@ -65,10 +65,10 @@ const Footer = () => {
 
                         <FooterLinkItems>
                             <FooterLinkTitle>Get the App</FooterLinkTitle>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>
+                            <SocialLinks href='#' target='' aria-label='Instagram'>
                                 <ImageLink><Image src={apple} alt='Apple'/></ImageLink>
                             </SocialLinks>
-                            <SocialLinks href='https://www.instagram.com/rohittgrg/' target='_blank' aria-label='Instagram'>
+                            <SocialLinks href='#' target='' aria-label='Instagram'>
                                 <ImageLink><Image src={google} alt='Google'/></ImageLink>
                             </SocialLinks>
                         </FooterLinkItems>

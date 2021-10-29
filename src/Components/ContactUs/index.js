@@ -61,12 +61,12 @@ const ContactUs = () => {
                             </TopDiv>
                             <BottomDiv>
                                 <AppleDiv>
-                                    <AppleLink href='https://www.instagram.com/rohittgrg/' target='_blank'  aria-label='Apple'>
+                                    <AppleLink href='#' target=''  aria-label='Apple'>
                                         <AppleImage src={apple} alt='Apple'/>
                                     </AppleLink>
                                 </AppleDiv>
                                 <GoogleDiv>
-                                    <GoogleLink href='https://www.instagram.com/rohittgrg/' target='_blank'  aria-label='Apple'>
+                                    <GoogleLink href='#' target=''  aria-label='Apple'>
                                         <GoogleImage src={google} alt='Google'/>
                                     </GoogleLink>
                                 </GoogleDiv>
