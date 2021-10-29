@@ -1,0 +1,73 @@
+.margin {
+  margin: 25px;
+}
+
+.bottomDiv {
+  position: relative;
+  bottom: 90px;
+}
+
+.imgS {
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 960px) {
+  /*browsers larger than 960px; */
+  .bottomDiv {
+    position: relative;
+    bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /*browsers larger than 1440px; */
+  .bottomDiv {
+    position: relative;
+    bottom: 68px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  /*sumo sized (mac) screens */
+  .bottomDiv {
+    position: relative;
+    bottom: 68px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  /*mobile browsers smaller than 480px; (iPhone) */
+  .bottomDiv {
+    position: relative;
+    bottom: 21px;
+  }
+  .padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+  .bottomDiv {
+    position: relative;
+    bottom: 30px;
+  }
+}
+
+/* different iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* portrait layouts only */
+  .bottomDiv {
+    position: relative;
+    bottom: 30px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* landscape layouts only */
+  .bottomDiv {
+    position: relative;
+    bottom: 30px;
+  }
+}
