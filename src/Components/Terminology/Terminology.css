@@ -33,13 +33,13 @@ hr {
   padding: 0;
 }
 
-.bg-terminology {
-  background-image: url("/src/images/home.png");
+.bg-ter {
+  background-image: url("/src/images/bg-ter.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 80vh;
+  height: 100%;
 }
 
 .form-control {
@@ -121,7 +121,7 @@ h5 {
 }
 .title-text {
   font-family: Audiowide;
-  font-size: 64px;
+  font-size: 54px;
   font-style: normal;
   font-weight: 400;
   line-height: 82px;

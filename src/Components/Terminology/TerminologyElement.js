@@ -5,6 +5,7 @@ import { useState } from "react";
 import './Terminology.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './DropdownCustom.css'
+import Label from '../../images/aboutLine.svg'
 
 export default function Ter() {
   const [selected, setSelected] = useState("Choose One");
@@ -14,8 +15,10 @@ export default function Ter() {
 
   return (
             <div className="app" id='terminology'>
-                <div className='container-fluid color-black pt-4'>
+                <div className='container-fluid pb-5 bg-ter color-black pt-4'>
                     <div className='container s pt-5'>
+                        <h1 className='text-center color-smoke-white small-text'><span><img src={Label} alt="" /></span> TERMINOLOGY</h1>
+                        <h1 className='color-smoke-white mb-5 title-text'>ERMBASE - ENGLISH &lt; &gt; FRENCH</h1>
                         <div class="row justify-content-center">
                             <div class="col-md-4 col-sm-12">
                                 <label for="term" class="form-label label-text">Which Term? <span className='color-red'>*</span></label>
