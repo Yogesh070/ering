@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import home from '../../images/home.png'
-// import homeScroll from '../../images/homeScroll.png'
+import homeScroll from '../../images/homeScroll.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 import { BsChevronLeft,BsChevronRight } from 'react-icons/bs';
-import { HomeContainer, HomeWrapper, HomeImage, ContentWrapper, ScrollImageLink, ScrollImage, ScrollButton} from './HomeElements'
+import { HomeContainer, HomeWrapper, HomeImage, ContentWrapper, ScrollImageLink,ScrollButton} from './HomeElements'
 
 
 const Home = () => {
+
     const scrolls={
         UP:"up",
         DOWN:"down",
@@ -26,21 +29,22 @@ const Home = () => {
                 break;
         }
     }
+
     return (
         <HomeContainer id='home'>
             <HomeWrapper>
                 <HomeImage src={home} alt='Home'/>
 
                 <ContentWrapper>
-                    <h1>ARE<br/>YOU A<br/>WINNER?</h1>
+                <Fade top> <h1>ARE<br/>YOU A<br/>WINNER?</h1></Fade>
                     <ScrollImageLink>
                     {/* <ScrollImageLink activeClass='active' to="about" offset={-116} exact='true'> */}
                         {/* <ScrollImage src={homeScroll} alt='Home Scroll'/> */}
-                    <ScrollButton bgcolor='#F07832' onClick={()=>scrollPage(scrolls.TOP)}><BsChevronLeft color='white'/></ScrollButton>
-                    <ScrollButton bgcolor='#1E2C39' onClick={()=>scrollPage(scrolls.DOWN)}><BsChevronRight  color='white'/></ScrollButton>
-
+                        <ScrollButton bgcolor='#F07832' onClick={()=>scrollPage(scrolls.TOP)}><BsChevronLeft color='white'/></ScrollButton>
+                        <ScrollButton bgcolor='#1E2C39' onClick={()=>scrollPage(scrolls.DOWN)}><BsChevronRight  color='white'/></ScrollButton>
                     </ScrollImageLink>
                 </ContentWrapper>
+
             </HomeWrapper>
         </HomeContainer>
     )

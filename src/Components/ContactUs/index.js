@@ -8,6 +8,8 @@ import contactCall from '../../images/contactCall.png'
 import contactGmail from '../../images/contactGmail.png'
 import contactWhatsapp from '../../images/contactWhatsapp.png'
 import contactSkype from '../../images/contactSkype.png'
+import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/Zoom'
 import { ContactContainer, EverythingWrapper, CircleImage, GradientWrapper, GradientContentWrapper, ContentDiv, EmptyDiv, TopDiv, BottomDiv, DownloadH1, AppleDiv, GoogleDiv, AppleImage, GoogleImage, AppleLink, GoogleLink, ContentWrapper, Left, Right, ContactImageWrapper, ContactImage, FirstDiv, LastDiv, Top, Bottom, BottomRight, BottomLeft, TopHeader, TopLine, TopMainHeader, BottomText, SocialIcons, RightTopDiv, RightBottomDiv, ContactImgWrapper, Last, ImageWrapper, BottomInvisibleText } from './ContactUsElements'
 
 const ContactUs = () => {
@@ -20,34 +22,49 @@ const ContactUs = () => {
                         <Left>
                             <FirstDiv>
                                 <Top>
-                                    <TopHeader><TopLine src={line} alt='Line'/>NEED MORE INFORMATION</TopHeader>
-                                    <TopMainHeader>CONTACT US</TopMainHeader>
+                                    <Fade left>
+                                        <TopHeader><TopLine src={line} alt='Line'/>NEED MORE INFORMATION</TopHeader>
+                                        <TopMainHeader>CONTACT US</TopMainHeader>
+                                    </Fade>
                                 </Top>
                                 <Bottom>
                                     <BottomLeft>
-                                        <BottomText><SocialIcons src={contactCall} alt='Phone'/> +237 655394492 </BottomText>
-                                        <BottomText><SocialIcons src={contactWhatsapp} alt='Whatsapp'/> +237 675500863 </BottomText>
-                                        <BottomInvisibleText><SocialIcons src={contactGmail} alt='Gmail'/> theodoredasse@gmail.com</BottomInvisibleText>
-                                        <BottomInvisibleText><SocialIcons src={contactSkype} alt='Skype'/> theodoredasse</BottomInvisibleText>
+                                        <Fade left>
+                                            <BottomText><SocialIcons src={contactCall} alt='Phone'/> +237 655394492 </BottomText>
+                                            <BottomText><SocialIcons src={contactWhatsapp} alt='Whatsapp'/> +237 675500863 </BottomText>
+                                            <BottomInvisibleText><SocialIcons src={contactGmail} alt='Gmail'/> theodoredasse@gmail.com</BottomInvisibleText>
+                                            <BottomInvisibleText><SocialIcons src={contactSkype} alt='Skype'/> theodoredasse</BottomInvisibleText>
+                                        </Fade>
                                     </BottomLeft>
                                     <BottomRight>
-                                        <BottomText><SocialIcons src={contactGmail} alt='Gmail'/> theodoredasse@gmail.com</BottomText>
-                                        <BottomText><SocialIcons src={contactSkype} alt='Skype'/> theodoredasse</BottomText>
+                                        <Fade left>
+                                            <BottomText><SocialIcons src={contactGmail} alt='Gmail'/> theodoredasse@gmail.com</BottomText>
+                                            <BottomText><SocialIcons src={contactSkype} alt='Skype'/> theodoredasse</BottomText>
+                                        </Fade>
                                     </BottomRight>
                                 </Bottom>
                                 <Last>
-                                    <ImageWrapper><ContactImage src={contact} alt='Contact'/></ImageWrapper>
+                                    <Fade left>
+                                        <ImageWrapper><ContactImage src={contact} alt='Contact'/></ImageWrapper>
+                                    </Fade>
                                 </Last>
                             </FirstDiv>
                             <LastDiv/>
                         </Left>
+
                         <Right>
                             <RightTopDiv>
-                                <ContactImgWrapper><ContactImage src={contact} alt='Contact'/></ContactImgWrapper>
+                                <ContactImgWrapper>
+                                    <Zoom>
+                                        <ContactImage src={contact} alt='Contact'/>
+                                    </Zoom>
+                                </ContactImgWrapper>
                             </RightTopDiv>
                             <RightBottomDiv/>
                             <ContactImageWrapper>
-                                <ContactImage src={contact} alt='Contact'/>
+                                <Zoom>
+                                    <ContactImage src={contact} alt='Contact'/>
+                                </Zoom>
                             </ContactImageWrapper>
                         </Right>
                     </ContentWrapper>
@@ -57,17 +74,23 @@ const ContactUs = () => {
                     <GradientContentWrapper>
                         <ContentDiv>
                             <TopDiv>
-                                <DownloadH1>Download our app for direct access to our salespersons.</DownloadH1>
+                                <Fade left>
+                                    <DownloadH1>Download our app for direct access to our salespersons.</DownloadH1>
+                                </Fade>
                             </TopDiv>
                             <BottomDiv>
                                 <AppleDiv>
                                     <AppleLink href='#' target=''  aria-label='Apple'>
-                                        <AppleImage src={apple} alt='Apple'/>
+                                        <Fade left>
+                                            <AppleImage src={apple} alt='Apple'/>
+                                        </Fade>
                                     </AppleLink>
                                 </AppleDiv>
                                 <GoogleDiv>
                                     <GoogleLink href='#' target=''  aria-label='Apple'>
-                                        <GoogleImage src={google} alt='Google'/>
+                                        <Fade left>
+                                            <GoogleImage src={google} alt='Google'/>
+                                        </Fade>
                                     </GoogleLink>
                                 </GoogleDiv>
                             </BottomDiv>

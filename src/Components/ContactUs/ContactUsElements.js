@@ -347,7 +347,7 @@ export const GoogleLink = styled.a`
     height: 100%;
     max-width: 318px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 0;
 
     @media screen and (max-width: 280px){
         max-width: 200px;

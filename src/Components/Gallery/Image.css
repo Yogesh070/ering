@@ -7,10 +7,12 @@
   bottom: 90px;
 }
 
-.imgS {
-  width: 100%;
-  background-position: center;
-  object-fit: cover;
+.image {
+  max-height: 80vh;
+}
+
+.card-img-top {
+  max-height: 20vh;
 }
 
 @media only screen and (min-width: 960px) {
