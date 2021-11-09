@@ -1,0 +1,65 @@
+.sm-text {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.tl-text {
+  font-family: Audiowide;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 82px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.img-margin {
+  padding-left: 5px;
+  padding-right: 5px;
+  max-height: 80vh;
+}
+.img-fluid {
+  width: fit-content;
+}
+.image {
+  max-height: 80vh;
+}
+
+@media (max-width: 540px) {
+  .tl-text {
+    font-size: 24px;
+  }
+
+  .sm-text {
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 1510px) {
+  .tl-text {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .tl-text {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .tl-text {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .tl-text {
+    font-size: 24px;
+  }
+}

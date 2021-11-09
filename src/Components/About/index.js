@@ -2,6 +2,7 @@ import React from 'react'
 import line from '../../images/aboutLine.svg'
 import circle from '../../images/aboutCircle.svg'
 import {BsFillTelephoneFill} from 'react-icons/bs'
+import Fade from 'react-reveal/Fade'
 import {PageContainer, ImageContainer, Image, ContentContainer, Topic, TopicVisible, TwoCardsContainer, CardWrapper, CardFront, CardBack, TextWrapper, Line, Header, Paragraph, OneCardContainer, CardWrapper2, CardFront2, CardBack2, ContentWrapper, ContentHeader, ContentButton, Line2, HeaderText, ParagraphText, CallButton} from './AboutElements'
 
 const About = () => {
@@ -11,10 +12,11 @@ const About = () => {
                     <Image src={circle} alt='Circle'/>
                     <ContentContainer>
 
-                        <Topic>THE ENGAGEMENT RING TRANSLATION</Topic>
+                        <Fade><Topic>THE ENGAGEMENT RING TRANSLATION</Topic></Fade>
                         <TopicVisible>THE ENGAGEMENT<br/>RING TRANSLATION</TopicVisible>
 
                         <TwoCardsContainer>
+                            <Fade left>
                             <CardWrapper>
                                 <CardFront>
                                     <TextWrapper>
@@ -27,39 +29,44 @@ const About = () => {
                                 </CardFront>
                                 <CardBack/>
                             </CardWrapper>
+                            </Fade>
 
-                            <CardWrapper>
-                                <CardFront>
-                                    <TextWrapper>
-                                        <Header>
-                                            <Line src={line} alt='Line'/>NOT A WINNER? 
-                                        </Header>
-                                        <Paragraph>Keep searching if you are that business, woman or man of average stuffs. We are here not for everybody but for winners. We help you move to the next level of achievement if you are an ambitious, self-demanding, and success-driven business, organization, or individual. We hope to attract ONLY a handful of you who are aware of the power of investing in quality for dramatic business, project, product, solution, or career outcomes.
-                                        </Paragraph>
-                                    </TextWrapper>
-                                </CardFront>
-                                <CardBack/>
-                            </CardWrapper>
+                            <Fade right>
+                                <CardWrapper>
+                                    <CardFront>
+                                        <TextWrapper>
+                                            <Header>
+                                                <Line src={line} alt='Line'/>NOT A WINNER? 
+                                            </Header>
+                                            <Paragraph>Keep searching if you are that business, woman or man of average stuffs. We are here not for everybody but for winners. We help you move to the next level of achievement if you are an ambitious, self-demanding, and success-driven business, organization, or individual. We hope to attract ONLY a handful of you who are aware of the power of investing in quality for dramatic business, project, product, solution, or career outcomes.
+                                            </Paragraph>
+                                        </TextWrapper>
+                                    </CardFront>
+                                    <CardBack/>
+                                </CardWrapper>
+                            </Fade>
                         </TwoCardsContainer>
 
                         <OneCardContainer>
-                            <CardWrapper2>
-                                <CardFront2>
-                                    <ContentWrapper>
-                                        <ContentHeader>
-                                            <HeaderText>
-                                                <Line2 src={line} alt='Line'/>REACH OUT TO US NOW
-                                            </HeaderText>
-                                            <ParagraphText>Still sure about reaching out to The Engagement Ring Translations Ltd to have your translation, interpreting, voiceover, dubbing, copywriting and other language services problems solved for more success? If so, congratulations! You are a winner, we have the same mindset, and we speak your language.
-                                            </ParagraphText>
-                                        </ContentHeader>
-                                        <ContentButton>
-                                            <CallButton><BsFillTelephoneFill/>Talk to us now</CallButton>
-                                        </ContentButton>
-                                    </ContentWrapper>
-                                </CardFront2>
-                                <CardBack2/>
-                            </CardWrapper2>
+                            <Fade bottom>
+                                <CardWrapper2>
+                                    <CardFront2>
+                                        <ContentWrapper>
+                                            <ContentHeader>
+                                                <HeaderText>
+                                                    <Line2 src={line} alt='Line'/>REACH OUT TO US NOW
+                                                </HeaderText>
+                                                <ParagraphText>Still sure about reaching out to The Engagement Ring Translations Ltd to have your translation, interpreting, voiceover, dubbing, copywriting and other language services problems solved for more success? If so, congratulations! You are a winner, we have the same mindset, and we speak your language.
+                                                </ParagraphText>
+                                            </ContentHeader>
+                                            <ContentButton>
+                                                <CallButton><BsFillTelephoneFill/>Talk to us now</CallButton>
+                                            </ContentButton>
+                                        </ContentWrapper>
+                                    </CardFront2>
+                                    <CardBack2/>
+                                </CardWrapper2>
+                            </Fade>
                         </OneCardContainer>
 
                     </ContentContainer>

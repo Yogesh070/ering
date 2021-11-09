@@ -33,19 +33,20 @@ export default class Video extends Component {
                             swipe={false}
                             asNavFor={this.state.nav2}
                             ref={slider => (this.slider1 = slider)}
+                            focusOnSelect={true}
                         >
                             <div className='container-fluid m-0 p-0'>
-                                <img src={Image1} alt="" className='img-fluid vw-100'/>
+                                <img src={Image1} alt="" className='img-fluid image vw-100'/>
                             </div>
 
                             <div className='container-fluid m-0 p-0'>
-                                <img src={Image2} className='img-fluid vw-100' alt=""/>
+                                <img src={Image2} className='img-fluid image vw-100' alt=""/>
                             </div>
                             <div className='container-fluid m-0 p-0'>
-                                <img src={Image3} class="img-fluid vw-100" alt=""/>
+                                <img src={Image3} class="img-fluid image vw-100" alt=""/>
                             </div>
                             <div className='container-fluid p-0 m-0'>
-                            <img src={Image1} class="img-fluid vw-100" alt=""/>
+                            <img src={Image1} class="img-fluid image vw-100" alt=""/>
                             </div>
                         </Slider>
                     
@@ -54,7 +55,7 @@ export default class Video extends Component {
                         <Slider 
                         asNavFor={this.state.nav1}
                         ref={slider => (this.slider2 = slider)}
-                        slidesToShow={3}
+                        slidesToShow={3} 
                         swipe={false}
                         swipeToSlide={false}
                         focusOnSelect={true}

@@ -30,7 +30,7 @@ export const CircleImage = styled.img`
 export const FooterLinksContainer = styled.div`
     display: flex;
     justify-content: center;
-    z-index: 0;
+    z-index: 1;
 `
 
 export const FooterLinksWrapper = styled.div`
@@ -147,7 +147,7 @@ export const ImageLink = styled.a`
     height: 53px;
     width: 176px;
     cursor: pointer;
-    z-index: 0;
+    z-index: 10;
 `
 
 export const Image = styled.img`
