@@ -2,11 +2,13 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
     background: #000;
-    height: 704px;
+    /* height: 704px; */
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 `
 
 export const EverythingWrapper = styled.div`
@@ -244,11 +246,12 @@ export const ImageWrapper = styled.div`
 
 
 export const GradientWrapper = styled.div`
-    height: 303px;
+    height: 250px;
     width: 100%;
     background: -webkit-linear-gradient(360deg, #FA5C38, #EE8330);
     position: absolute;
-    margin-top: 401px;
+    bottom: 0;
+    /* margin-top: 401px; */
     overflow: hidden;
 
     @media screen and (max-width: 730px){
