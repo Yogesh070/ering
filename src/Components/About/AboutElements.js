@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const PageContainer = styled.div`
-    height: 1261px;
+    /* height: 1261px; */
+    height: 100vh;
     width: 100%;
     background: #000;
     display: flex;
@@ -16,6 +17,8 @@ export const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
+    display: block;
+    z-index: 0;
 `
 
 export const Image = styled.img`
@@ -24,6 +27,7 @@ export const Image = styled.img`
     position: absolute;
     top: 0;
     left: -100px;
+    z-index: -1;
 `
 
 export const Topic = styled.h1`
@@ -67,7 +71,7 @@ export const TopicVisible = styled.h1`
 `
 
 export const ContentContainer = styled.div`
-    z-index: 20;
+    z-index: 0;
     height: 100%;
     width: 100%;
     max-width: 1636px;
@@ -117,7 +121,8 @@ export const CardWrapper = styled.div`
 `
 
 export const CardFront = styled.div`
-    height: 296px;
+    /* height: 296px; */
+    height: 250px;
     width: 734px;
     border-radius: 10px;
     background: #202020;
@@ -143,7 +148,8 @@ export const CardFront = styled.div`
 
 export const CardBack = styled.div`
     border-radius: 10px;
-    height: 293px;
+    /* height: 293px; */
+    height: 250px;
     width: 743px;
     top: 27px;
     left: 21px;
@@ -205,11 +211,12 @@ export const Line = styled.img`
 `
 
 export const Header = styled.h1`
-    font-size: 36px;
     font-weight: 500;
 
     @media screen and (max-width: 1410px){
-        font-size: 30px;
+        /* font-size: 30px; */
+        font-size: 26px;
+
     }
     
     @media screen and (max-width: 1210px){
@@ -247,7 +254,8 @@ export const OneCardContainer = styled.div`
 `
 
 export const CardWrapper2 = styled.div`
-    height: 320px;
+    /* height: 320px; */
+    height: 250px;
     width: 1132px;
     position: relative;
 
@@ -269,7 +277,8 @@ export const CardWrapper2 = styled.div`
 `
 
 export const CardFront2 = styled.div`
-    height: 296px;
+    /* height: 296px; */
+    height: 214px;
     width: 1102px;
     border-radius: 10px;
     background: #202020;
@@ -295,7 +304,8 @@ export const CardFront2 = styled.div`
 
 export const CardBack2 = styled.div`
     border-radius: 10px;
-    height: 288px;
+    /* height: 288px; */
+    height: 212px;
     width: 1100px;
     top: 32px;
     left: 32px;
@@ -376,10 +386,13 @@ export const Line2 = styled.img`
 
 export const HeaderText = styled.h1`
     font-size: 36px;
+    /* font-size: 28px; */
     font-weight: 500;
 
     @media screen and (max-width: 1410px){
-        font-size: 30px;
+        /* font-size: 30px; */
+        font-size: 26px;
+
     }
     
     @media screen and (max-width: 1210px){

@@ -31,7 +31,7 @@ export const CircleImage = styled.img`
 export const FooterLinksContainer = styled.div`
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 0;
 `
 
 export const FooterLinksWrapper = styled.div`

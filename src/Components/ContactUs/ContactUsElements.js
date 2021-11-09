@@ -31,7 +31,7 @@ export const ContentWrapper = styled.div`
     height: 100%;
     width: 100%;
     display: flex;
-    z-index: 1;
+    z-index: 0;
 `
 
 export const Left = styled.div`

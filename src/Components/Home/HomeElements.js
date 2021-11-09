@@ -38,7 +38,8 @@ export const ContentWrapper = styled.div`
     flex-direction: column;
     max-width: 1636px;
     height: 100%;
-    max-height: 507px;
+    /* max-height: 507px; */
+    max-height: 580px;
     width: calc(100% - 50px);
     padding-left: 24px;
 
@@ -47,9 +48,11 @@ export const ContentWrapper = styled.div`
     }
 
     h1{
-        font-size: 144px;
+        /* font-size: 144px; */
+        font-size: 120px;
         font-weight: 900;
         background: -webkit-linear-gradient(#F48834, #E84824);
+        background-clip:text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
@@ -70,16 +73,29 @@ export const ContentWrapper = styled.div`
         }
     }
 `
+        export const ScrollButton = styled.div`
+            width: 65px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: ${props=>props.bgcolor};
+             z-index: 1000;
+
+        `
 
 export const ScrollImageLink = styled(Link)`
     width: 130px;
     height: 66px;
-    right: 0;
+    right: 10px;
     bottom: 0;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     margin-bottom: 24px;
     margin-right: 24px;
     cursor: pointer;
+    display: flex;
+    z-index: 1000;
 
     @media screen and (max-width: 1660px){
         margin-right: 0;
